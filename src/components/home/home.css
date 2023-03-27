@@ -1,0 +1,123 @@
+.home {
+  background-color: var(--first-gradient);
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.home-container {
+  width: 100%;
+}
+.home-subtitle,
+.home-job {
+  font-weight: 700;
+}
+.home-subtitle,
+.home-job span {
+  font-size: var(--small-font-size);
+}
+.home-subtitle span,
+.home-title span {
+  color: var(--primary-color);
+}
+.home-job b {
+  font-family: var(--second-font);
+  font-size: var(--h2-font-size);
+  margin-left: 10px;
+}
+.home-title {
+  font-size: var(--biggest-font-size);
+  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
+    2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px 0 rgb(0 0 0 /20%);
+  line-height: 1.2;
+  margin-top: 15px;
+}
+.home-text {
+  font-size: var(--large-font-size);
+  margin-block: 40px 28px;
+  max-width: 520px;
+}
+.home-socials {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 30px;
+}
+.home-social-links {
+  color: var(--title-color);
+  font-size: var(--h5-font-size);
+  transition: all 0.7s var(--transition);
+}
+.home-social-links:hover {
+  color: var(--primary-color);
+}
+.home-btns {
+  display: flex;
+  column-gap: 70px;
+}
+.home-img-wrapper {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+.home-img {
+  background: url(../../assets/pImg.jpg);
+  width: 450px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  order: 1;
+  justify-self: center;
+  animation: profile-animate 8s ease-in-out infinite 1s;
+
+}
+
+@keyframes profile-animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+}
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+}
+@media only screen and (max-width: 1177px){
+  .home-img-wrapper,.home-img{
+    width: 350px;
+    height: 350px;
+    right: 100px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .home-img-wrapper{
+    left: 250px;
+    top: 30px;
+    margin-right: 250px;
+  }
+  .home-img-wrapper,.home-img{
+    width: 450px;
+    height: 400px;
+    right: 100px;
+  }
+  .home-container{
+    margin-top: 500px;
+  }
+  .home-text{
+    max-width: 1000px;
+  }
+}
+@media only screen and (max-width: 709px){
+  .home-img-wrapper{
+    left: 10px;
+    top: 30px;
+    margin-right: 250px;
+  }
+  .home-title{
+    font-size: 60px;
+  }
+  .home-text{
+    max-width: 1000px;
+  }
+}
