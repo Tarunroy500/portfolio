@@ -3,6 +3,12 @@
   min-height: 100vh;
   display: grid;
   align-items: center;
+  padding-bottom: 180px;
+}
+.home-wrapper{
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
 }
 .home-container {
   width: 100%;

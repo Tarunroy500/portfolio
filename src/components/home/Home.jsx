@@ -11,6 +11,7 @@ import {motion} from 'framer-motion';
 const Home = () => {
   return (
     <section className="home" id="home">
+      <div className="home-wrapper">
       <div className="home-container container">
         <p className="home-subtitle text-cs">
           Hello, <span>My Name Is</span>
@@ -70,6 +71,7 @@ const Home = () => {
             My Skills
           </a>
         </div>
+      </div>
       </div>
     </section>
   );
