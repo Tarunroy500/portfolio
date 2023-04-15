@@ -1,7 +1,4 @@
 import React from "react";
-import profileImg from "../../assets/profile-img.png";
-import shapeOne from "../../assets/shape-1.png";
-import shapeTwo from "../../assets/shape-2.png";
 import { FaTwitter, FaDribbble, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import "./home.css";
